@@ -30,16 +30,34 @@ console.log('Large: ');
 findNemo(large);
 
 // Compress Boxes
-// O(n) -- Linear Time
+// O(n) --> Linear Time
 // Complexity = Fair
+
 const boxes = new Array(30).fill('box');
-const compressAllBoxes = (boxes) => {
+function compressAllBoxes(boxes) {
   let t0 = performance.now();
-  boxes.forEach((box) => console.log('Box Compressed!'));
+  boxes.forEach(function (item) {
+    console.log(item);
+  });
   let t1 = performance.now();
   console.log('It took ' + (t1 - t0) + 'milliseconds to compress all boxes!');
-};
+}
 
 console.log(' ');
 console.log('Machine is compressing boxes!');
 compressAllBoxes(boxes);
+
+// Compress only one box
+// O(1) --> Constant Time
+// Complexity = Excellent
+
+function compressFirstBox(boxes) {
+  let t0 = performance.now();
+  console.log(boxes[0]);
+  let t1 = performance.now();
+  console.log('It took ' + (t1 - t0) + 'milliseconds to compress one box!');
+}
+
+console.log(' ');
+console.log('Machine is compressing 1 box!');
+compressFirstBox(boxes);
