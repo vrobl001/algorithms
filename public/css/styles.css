@@ -21,6 +21,7 @@ body {
           flex-grow: 1;
   overflow-y: auto;
   font-family: 'Poppins', sans-serif;
+  background-color: lightgray;
 }
 
 .navBar {
@@ -126,5 +127,56 @@ footer p {
 
 .homeContainer a:hover {
   text-decoration: none;
+}
+
+.rule1Container h1 {
+  text-align: center;
+}
+
+.rule1Container .card {
+  font-family: 'Open Sans', sans-serif;
+  margin: 1rem auto;
+  width: 60%;
+}
+
+.rule1Container pre {
+  color: white;
+  padding: 1rem;
+}
+
+.rule1Container pre .darkBlue {
+  color: #358cd6;
+}
+
+.rule1Container pre .blue {
+  color: #4fc1ff;
+}
+
+.rule1Container pre .lightBlue {
+  color: #9cdcfe;
+}
+
+.rule1Container pre .green {
+  color: #00dc17;
+}
+
+.rule1Container pre .darkGreen {
+  color: #438a49;
+}
+
+.rule1Container pre .lightGreen {
+  color: #b5cea8;
+}
+
+.rule1Container pre .orange {
+  color: #ce8349;
+}
+
+.rule1Container pre .yellow {
+  color: #dccd79;
+}
+
+.rule1Container pre .purple {
+  color: #c586c0;
 }
 /*# sourceMappingURL=styles.css.map */

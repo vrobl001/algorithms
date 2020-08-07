@@ -12,6 +12,7 @@ body {
     flex-grow: 1;
     overflow-y: auto;
     font-family: 'Poppins', sans-serif;
+    background-color: lightgray;
   }
 }
 
@@ -84,5 +85,56 @@ footer {
   }
   a:hover {
     text-decoration: none;
+  }
+}
+
+// Rule 1
+.rule1Container {
+  h1 {
+    text-align: center;
+  }
+  .card {
+    font-family: 'Open Sans', sans-serif;
+    margin: 1rem auto;
+    width: 60%;
+  }
+  pre {
+    color: white;
+    padding: 1rem;
+    .darkBlue {
+      color: rgb(53, 140, 214);
+    }
+
+    .blue {
+      color: rgb(79, 193, 255);
+    }
+
+    .lightBlue {
+      color: rgb(156, 220, 254);
+    }
+
+    .green {
+      color: rgb(0, 220, 23);
+    }
+
+    .darkGreen {
+      color: rgb(67, 138, 73);
+    }
+
+    .lightGreen {
+      color: rgb(181, 206, 168);
+    }
+
+    .orange {
+      color: rgb(206, 131, 73);
+    }
+
+    .yellow {
+      color: rgb(220, 205, 121);
+    }
+
+    .purple {
+      color: rgb(197, 134, 192);
+    }
   }
 }

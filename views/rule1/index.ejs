@@ -1,3 +1,29 @@
 <%- include('../partials/header') %>
-<h1>Rule 1</h1>
+<div class="rule1Container">
+  <br />
+  <h1>Rule 1: Worst Case</h1>
+  <pre class="pre-scrollable" style="background-color: rgb(30, 30, 30); width: 40%; margin: 0 auto;">
+    <span class="blue">function</span> <span class="yellow">funChallenge</span>(<span class="lightBlue">input</span>) {
+      <span class="blue">let</span> <span class="lightBlue">a</span> = <span class="lightGreen">10</span>; <span class="darkGreen">//O(1)</span> 
+      <span class="blue">a</span> = <span class="lightGreen">50</span> + <span class="lightGreen">3</span>; <span class="darkGreen">//O(1)</span>
+      <span class="purple">for</span> <span class="green">(</span><span class="blue">let</span> <span class="lightBlue">i</span> = <span class="lightGreen">0</span>; <span class="lightBlue">i</span> < <span class="lightBlue">input.length</span>; <span class="lightBlue">i</span>++<span class="green">) {</span> <span class="darkGreen">//O(n)</span>
+        <span class="yellow">anotherFunction</span><span class="darkBlue">()</span>; <span class="darkGreen">//O(n)</span>
+        <span class="blue">let</span> <span class="lightBlue">stranger</span> = <span class="blue">true</span>; <span class="darkGreen">//O(n)</span>
+        <span class="lightBlue">a</span>++; <span class="darkGreen">//O(n)</span>
+      <span class="green">}</span>
+      <span class="purple">return</span> <span class="lightBlue">a</span>; <span class="darkGreen">//O(1)</span>
+    }
+    <span class="darkGreen">
+    // Big O(1 + 1 + 1 + n + n + n + n)
+    // Big O(3 + 4n)
+    // Big O(n)
+    </span>
+  </pre>
+  <div class="card shadow-sm p-3 mb-5 bg-white rounded">
+    <div class="card-body">
+      Big O can be simplified into the worst case. In this example, O(1) is considered excellent while O(n) is
+      considered fair in complexity. Since O(n) is considered to be the worst case, Big O can be simplified to O(n).
+    </div>
+  </div>
+</div>
 <%- include('../partials/footer') %>
