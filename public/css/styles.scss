@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.appOuterContainer {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  .appInnerContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+// Navbar
+.navBar {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0rem 0.1rem 0.25rem 0rem rgb(66, 82, 110);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  list-style: none;
+  padding-left: 1rem;
+  a {
+    color: white;
+    height: 100%;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+  }
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    color: white;
+  }
+  .linksContainer {
+    margin-right: 5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      display: flex;
+      li {
+        margin: 1rem;
+      }
+    }
+  }
+  .linksContainer:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin-top: 0.45rem;
+  }
+}
+
+// Footer
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  box-shadow: 0rem -0.1rem 0.25rem 0rem rgb(66, 82, 110);
+  text-align: center;
+  padding: 0.5rem;
+  p {
+    margin: auto;
+  }
+}
+
+// Home Page
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  li {
+    font-family: 'Open Sans', sans-serif;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
